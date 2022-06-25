@@ -2,4 +2,4 @@ from django.shortcuts import render
 
 
 def home(req):
-    return render(req, 'recipes/home.html', context={'nome': 'Ola mundo'})
+    return render(req, 'recipes/pages/home.html', context={'nome': 'Antônio Cosmo'})
