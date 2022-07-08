@@ -12,9 +12,11 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 import os
 from pathlib import Path
-from re import M
 
 from dotenv import load_dotenv
+
+# from re import M
+
 
 load_dotenv()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -55,7 +57,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'projeto.urls'
+ROOT_URLCONF = 'app_config.urls'
 
 TEMPLATES = [
     {
@@ -75,7 +77,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'projeto.wsgi.application'
+WSGI_APPLICATION = 'app_config.wsgi.application'
 
 
 # Database
